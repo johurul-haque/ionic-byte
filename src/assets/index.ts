@@ -5,4 +5,5 @@ export { default as shapeCursor } from './shape-cursor.svg';
 export { default as shopifyBag } from './shopify-bag.svg';
 export { default as tagBg } from './tag-bg.svg';
 export { default as tag } from './tags.svg';
+export { default as uiUxBg } from './ui-ux-tiles-bg.svg';
 export { default as webDevBg } from './webDevBg.svg';

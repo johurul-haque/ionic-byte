@@ -1,21 +1,21 @@
-import { globe, webDevBg } from '@/assets';
+import { bag, shopifyBag } from '@/assets';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export function Tiles1() {
+export function Tiles4() {
   return (
-    <div className="pt-10 pl-8 w-full bg-[#504CFF] rounded-3xl backdrop-blur-[15px] grid grid-cols-2 relative">
+    <div className="pt-10 pl-8 w-full bg-[#854CFF] rounded-3xl backdrop-blur-[15px] grid grid-cols-2 relative">
       <div className="flex flex-col text-base leading-7 text-white pb-10">
         <Image
-          loading="lazy"
-          src={globe}
-          alt="Website Dev"
+          src={bag}
+          role="presentation"
+          alt=""
           className="aspect-square backdrop-blur-[10px] w-[60px]"
           width={60}
           height={60}
         />
         <h3 className="mt-12 text-3xl font-medium whitespace-nowrap">
-          Website Dev
+          Shopify
         </h3>
         <p className="mt-4 max-w-md">
           Help you to build website for company that is modern, user friendly
@@ -31,7 +31,7 @@ export function Tiles1() {
         </Link>
       </div>
       <Image
-        src={webDevBg}
+        src={shopifyBag}
         className="aspect-auto max-w-[22rem] ml-auto mt-auto"
         alt=""
         role="presentation"
