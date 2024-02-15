@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={`${inter.className} container`}>
+    <div className={`${inter.className} bg-black`}>
       <Component {...pageProps} />
     </div>
   );
