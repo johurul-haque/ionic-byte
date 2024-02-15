@@ -12,7 +12,7 @@ export function WorkTogether() {
       <div className="container">
         <Heading2>Let&apos;s work together</Heading2>
         <div className="flex justify-between items-center mt-3">
-          <p className="text-slate-100 tracking-wider max-w-2xl">
+          <p className="text-slate-100 tracking-wider max-w-2xl font-light">
             {description}
           </p>
           <Link

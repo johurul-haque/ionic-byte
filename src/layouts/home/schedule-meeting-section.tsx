@@ -11,7 +11,7 @@ export function ScheduleMeetingSection() {
         <h2 className="text-6xl text-slate-50 max-w-7xl leading-tight tracking-[0.015em]">
           {title}
         </h2>
-        <p className="text-slate-200 tracking-wider mt-5 max-w-md text-sm">
+        <p className="text-slate-200 tracking-wider mt-5 max-w-md text-sm font-light">
           Work in the IT field includes Web design, UI/UX design, Branding and
           Shopify development.
         </p>
