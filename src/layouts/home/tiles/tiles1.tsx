@@ -1,0 +1,43 @@
+import { globe, webDevBg } from '@/assets';
+import Image from 'next/image';
+import Link from 'next/link';
+
+export function Tiles1() {
+  return (
+    <div className="pt-10 pl-8 w-full bg-[#504CFF] rounded-3xl backdrop-blur-[15px] grid grid-cols-2 relative">
+      <div className="flex flex-col text-base leading-7 text-white pb-10">
+        <Image
+          loading="lazy"
+          src={globe}
+          alt="Website Dev"
+          className="aspect-square backdrop-blur-[10px] w-[60px]"
+          width={60}
+          height={60}
+        />
+        <h3 className="mt-12 text-3xl font-medium whitespace-nowrap">
+          Website Dev
+        </h3>
+        <p className="mt-4 max-w-md">
+          Help you to build website for company that is modern, user friendly
+          and optimized for search engines.
+        </p>
+
+        <Link
+          href={'/getting-started'}
+          className="flex items-center gap-1.5 mt-3"
+        >
+          <span className="underline">Start with us</span>
+          <div className="size-6 arrow-up" />
+        </Link>
+      </div>
+      <Image
+        src={webDevBg}
+        className="aspect-auto max-w-[22rem] ml-auto"
+        alt=""
+        role="presentation"
+        width={1080}
+        height={1920}
+      />
+    </div>
+  );
+}
