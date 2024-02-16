@@ -9,7 +9,7 @@ import {
 import Image from 'next/image';
 import Link from 'next/link';
 
-const socials = [
+export const socials = [
   {
     label: 'Go to Instagram',
     Icon: Instagram,
