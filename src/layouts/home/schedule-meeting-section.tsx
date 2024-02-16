@@ -1,4 +1,4 @@
-import arrowUp from '@/assets/arrow-up.svg';
+import { arrowUp } from '@/assets';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -24,6 +24,7 @@ export function ScheduleMeetingSection() {
           Schedule a meeting
           <Image
             src={arrowUp}
+            role="presentation"
             alt=""
             width={300}
             height={300}
