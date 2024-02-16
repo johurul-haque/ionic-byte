@@ -1,10 +1,11 @@
 import { shapeCursor, uiUxBg } from '@/assets';
 import Image from 'next/image';
 import Link from 'next/link';
+import { calendlyLink } from '../schedule-meeting-section';
 
 export function Tiles2() {
   return (
-    <div className="pt-10 pl-8 w-full bg-[#151515] rounded-3xl backdrop-blur-[15px] grid grid-cols-2 relative">
+    <article className="pt-10 pl-8 w-full bg-[#151515] rounded-3xl backdrop-blur-[15px] grid grid-cols-2 relative">
       <div className="flex flex-col text-base leading-7 text-white pb-10">
         <Image
           loading="lazy"
@@ -23,7 +24,7 @@ export function Tiles2() {
         </p>
 
         <Link
-          href={'/getting-started'}
+          href={calendlyLink}
           className="flex items-center gap-1.5 mt-3 max-w-fit"
         >
           <span className="underline">Start with us</span>
@@ -38,6 +39,6 @@ export function Tiles2() {
         width={1080}
         height={1920}
       />
-    </div>
+    </article>
   );
 }

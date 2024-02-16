@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const title = `Companies that can help you in developing your company for the future`;
+export const calendlyLink = 'https://calendly.com/ionicbyte/30min';
 
 export function ScheduleMeetingSection() {
   return (
@@ -17,7 +18,7 @@ export function ScheduleMeetingSection() {
         </p>
 
         <Link
-          href={'/schedule-meeting'}
+          href={calendlyLink}
           className="bg-slate-50 px-5 py-2 rounded-full flex gap-2 items-center font-medium -order-1 ml-auto mb-3"
         >
           Schedule a meeting

@@ -1,5 +1,6 @@
 import { arrowUp } from '@/assets';
 import { socials } from '@/layouts/home/hero-section';
+import { calendlyLink } from '@/layouts/home/schedule-meeting-section';
 import { Copyright } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -23,10 +24,10 @@ export function Footer() {
           </div>
 
           <Link
-            href={'/about'}
+            href={calendlyLink}
             className="bg-slate-50 px-5 py-2 rounded-full flex gap-2 items-center font-medium"
           >
-            Know more
+            Schedule a meeting
             <Image
               src={arrowUp}
               alt=""

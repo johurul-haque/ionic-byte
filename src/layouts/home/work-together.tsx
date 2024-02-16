@@ -2,6 +2,7 @@ import { BlurryColor } from '@/components/blurry-color';
 import { Heading2 } from '@/components/heading-two';
 import { ArrowRightCircle } from 'lucide-react';
 import Link from 'next/link';
+import { calendlyLink } from './schedule-meeting-section';
 import { Tiles1 } from './tiles/tiles1';
 import { Tiles2 } from './tiles/tiles2';
 import { Tiles3 } from './tiles/tiles3';
@@ -22,7 +23,7 @@ export function WorkTogether() {
             {description}
           </p>
           <Link
-            href="/get-started"
+            href={calendlyLink}
             className="px-5 py-2.5 flex items-center rounded-full gap-2.5 bg-white font-medium group"
           >
             Get Started
