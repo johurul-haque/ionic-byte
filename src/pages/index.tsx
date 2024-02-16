@@ -3,6 +3,7 @@ import { ClientsSection } from '@/layouts/home/clients';
 import { HeroSection } from '@/layouts/home/hero-section';
 import { RecentWorks } from '@/layouts/home/recent-works';
 import { ScheduleMeetingSection } from '@/layouts/home/schedule-meeting-section';
+import { Testimonials } from '@/layouts/home/testimonials';
 import { WorkTogether } from '@/layouts/home/work-together';
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <WorkTogether />
         <ClientsSection />
         <RecentWorks />
+        <Testimonials />
       </main>
     </>
   );

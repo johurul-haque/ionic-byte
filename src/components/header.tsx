@@ -1,3 +1,4 @@
+import { calendlyLink } from '@/layouts/home/schedule-meeting-section';
 import { ArrowRightCircle } from 'lucide-react';
 import Link from 'next/link';
 import { Logo } from './logo';
@@ -23,11 +24,14 @@ export function Header() {
       </nav>
 
       <Link
-        href="/get-started"
-        className="border-indigo-600 border-solid border-2 px-5 py-2.5 flex items-center rounded-full gap-2.5 max-w-fit ml-auto"
+        href={calendlyLink}
+        className="border-indigo-600 border-solid border-2 px-5 py-2.5 flex items-center rounded-full gap-2.5 max-w-fit ml-auto group"
       >
         Get Started
-        <ArrowRightCircle className="-rotate-45" strokeWidth={1.5} />
+        <ArrowRightCircle
+          className="-rotate-45 group-hover:rotate-0 transition-transform"
+          strokeWidth={1.5}
+        />
       </Link>
     </header>
   );

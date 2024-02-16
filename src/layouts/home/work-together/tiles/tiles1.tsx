@@ -1,22 +1,22 @@
-import { bag, shopifyBag } from '@/assets';
+import { globe, webDevBg } from '@/assets';
 import Image from 'next/image';
 import Link from 'next/link';
-import { calendlyLink } from '../schedule-meeting-section';
+import { calendlyLink } from '../../schedule-meeting-section';
 
-export function Tiles4() {
+export function Tiles1() {
   return (
-    <article className="pt-10 pl-8 w-full bg-[#854CFF] rounded-3xl backdrop-blur-[15px] grid grid-cols-2 relative">
+    <article className="pt-10 pl-8 w-full bg-[#504CFF] rounded-3xl backdrop-blur-[15px] grid grid-cols-2 relative">
       <div className="flex flex-col text-base leading-7 text-white pb-10">
         <Image
-          src={bag}
-          role="presentation"
-          alt=""
+          loading="lazy"
+          src={globe}
+          alt="Website Dev"
           className="aspect-square backdrop-blur-[10px] w-[60px]"
           width={60}
           height={60}
         />
         <h3 className="mt-auto text-3xl font-medium whitespace-nowrap">
-          Shopify
+          Website Dev
         </h3>
         <p className="mt-4 max-w-md">
           Help you to build website for company that is modern, user friendly
@@ -32,7 +32,7 @@ export function Tiles4() {
         </Link>
       </div>
       <Image
-        src={shopifyBag}
+        src={webDevBg}
         className="aspect-auto max-w-[22rem] ml-auto mt-auto"
         alt=""
         role="presentation"

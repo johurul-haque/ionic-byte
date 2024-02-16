@@ -1,4 +1,4 @@
-import { projects } from '@/assets/data';
+import { projects } from '@/assets/data/projects';
 import { BlurryColor } from '@/components/blurry-color';
 import { Heading2 } from '@/components/heading-two';
 import { ArrowRightCircle } from 'lucide-react';

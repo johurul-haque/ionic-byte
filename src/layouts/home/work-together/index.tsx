@@ -2,7 +2,7 @@ import { BlurryColor } from '@/components/blurry-color';
 import { Heading2 } from '@/components/heading-two';
 import { ArrowRightCircle } from 'lucide-react';
 import Link from 'next/link';
-import { calendlyLink } from './schedule-meeting-section';
+import { calendlyLink } from '../schedule-meeting-section';
 import { Tiles1 } from './tiles/tiles1';
 import { Tiles2 } from './tiles/tiles2';
 import { Tiles3 } from './tiles/tiles3';

@@ -1,22 +1,22 @@
-import { tag, tagBg } from '@/assets';
+import { bag, shopifyBag } from '@/assets';
 import Image from 'next/image';
 import Link from 'next/link';
-import { calendlyLink } from '../schedule-meeting-section';
+import { calendlyLink } from '../../schedule-meeting-section';
 
-export function Tiles3() {
+export function Tiles4() {
   return (
-    <article className="pt-10 pl-8 w-full bg-[#151515] rounded-3xl backdrop-blur-[15px] grid grid-cols-2 relative">
+    <article className="pt-10 pl-8 w-full bg-[#854CFF] rounded-3xl backdrop-blur-[15px] grid grid-cols-2 relative">
       <div className="flex flex-col text-base leading-7 text-white pb-10">
         <Image
-          src={tag}
-          className="aspect-square backdrop-blur-[10px] w-[60px]"
-          alt=""
+          src={bag}
           role="presentation"
+          alt=""
+          className="aspect-square backdrop-blur-[10px] w-[60px]"
           width={60}
           height={60}
         />
-        <h3 className="mt-12 text-3xl font-medium whitespace-nowrap">
-          Branding
+        <h3 className="mt-auto text-3xl font-medium whitespace-nowrap">
+          Shopify
         </h3>
         <p className="mt-4 max-w-md">
           Help you to build website for company that is modern, user friendly
@@ -32,8 +32,8 @@ export function Tiles3() {
         </Link>
       </div>
       <Image
-        src={tagBg}
-        className="aspect-auto max-w-[16rem] mt-auto ml-auto rounded-br-3xl"
+        src={shopifyBag}
+        className="aspect-auto max-w-[22rem] ml-auto mt-auto"
         alt=""
         role="presentation"
         width={1080}

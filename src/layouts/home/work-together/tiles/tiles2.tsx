@@ -1,7 +1,7 @@
 import { shapeCursor, uiUxBg } from '@/assets';
 import Image from 'next/image';
 import Link from 'next/link';
-import { calendlyLink } from '../schedule-meeting-section';
+import { calendlyLink } from '../../schedule-meeting-section';
 
 export function Tiles2() {
   return (
