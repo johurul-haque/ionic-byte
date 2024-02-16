@@ -11,7 +11,7 @@ import { Logo } from './logo';
 export function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer className="border-t border-[#635189]/80 pt-16 pb-12 mt-12 overflow-clip">
+    <footer className="border-t border-[#635189]/80 pt-16 pb-12 mt-36 overflow-clip">
       <div className="border-b border-[#635189]/30 pb-16">
         <div className="container flex items-center justify-between">
           <div>
