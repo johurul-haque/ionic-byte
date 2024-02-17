@@ -1,4 +1,4 @@
-import { arrowUp } from '@/assets';
+import { icons } from '@/assets';
 import { socials } from '@/layouts/home/hero-section';
 import { calendlyLink } from '@/layouts/home/schedule-meeting-section';
 import { Copyright } from 'lucide-react';
@@ -29,7 +29,7 @@ export function Footer() {
           >
             Schedule a meeting
             <Image
-              src={arrowUp}
+              src={icons.arrowUp}
               alt=""
               width={300}
               height={300}

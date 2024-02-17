@@ -1,4 +1,4 @@
-import bg from '@/assets/mask-bg.svg';
+import { maskBg } from '@/assets/vectors';
 import { Header } from '@/components/header';
 import { ArrowRightCircle, Instagram } from 'lucide-react';
 import Image from 'next/image';
@@ -18,7 +18,7 @@ export function HeroSection() {
     <div className="flex overflow-hidden relative flex-col px-16 pt-2 w-full min-h-[770px] max-md:px-5 max-md:max-w-full">
       <Image
         loading="lazy"
-        src={bg}
+        src={maskBg}
         alt=""
         className="object-cover absolute inset-0 size-full"
         width={1920}

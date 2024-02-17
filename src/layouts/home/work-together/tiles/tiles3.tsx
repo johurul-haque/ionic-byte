@@ -1,4 +1,4 @@
-import { tag, tagBg } from '@/assets';
+import { icons, vectors } from '@/assets';
 import Image from 'next/image';
 import Link from 'next/link';
 import { calendlyLink } from '../../schedule-meeting-section';
@@ -8,7 +8,7 @@ export function Tiles3() {
     <article className="pt-10 pl-8 w-full bg-[#151515] rounded-3xl backdrop-blur-[15px] grid grid-cols-2 relative">
       <div className="flex flex-col text-base leading-7 text-white pb-10">
         <Image
-          src={tag}
+          src={icons.tag}
           className="aspect-square backdrop-blur-[10px] w-[60px]"
           alt=""
           role="presentation"
@@ -32,7 +32,7 @@ export function Tiles3() {
         </Link>
       </div>
       <Image
-        src={tagBg}
+        src={vectors.tagBg}
         className="aspect-auto max-w-[16rem] mt-auto ml-auto rounded-br-3xl"
         alt=""
         role="presentation"

@@ -6,7 +6,7 @@ import {
   person4,
   person5,
   person6,
-} from '../people';
+} from '../images/people';
 
 type Testimonials = {
   name: string;

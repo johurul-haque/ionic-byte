@@ -1,5 +1,5 @@
 import { StaticImageData } from 'next/image';
-import { chowheaven, fusionHub, headphonesSite, munchspot } from '../projects';
+import { chowheaven, fusionHub, headphonesSite, munchspot } from '../images/projects';
 
 type Projects = {
   name: string;

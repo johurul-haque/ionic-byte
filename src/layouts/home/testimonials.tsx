@@ -1,5 +1,5 @@
+import { icons, vectors } from '@/assets';
 import { testimonials } from '@/assets/data/testimonials';
-import { quoteBg, quoteIcon } from '@/assets/icons';
 import { BlurryColor } from '@/components/blurry-color';
 import { Heading2 } from '@/components/heading-two';
 import Image from 'next/image';
@@ -27,7 +27,7 @@ export function Testimonials() {
                 />
                 <figcaption className="mr-auto">{name}</figcaption>
                 <Image
-                  src={quoteIcon}
+                  src={icons.quoteIcon}
                   aria-hidden={true}
                   role="presentation"
                   className="size-10"
@@ -45,7 +45,7 @@ export function Testimonials() {
         </div>
       </div>
       <Image
-        src={quoteBg}
+        src={vectors.quoteBg}
         aria-hidden={true}
         role="presentation"
         className="absolute top-0 right-0"

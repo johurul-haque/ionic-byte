@@ -1,4 +1,4 @@
-import { bag, shopifyBag } from '@/assets';
+import { icons, vectors } from '@/assets';
 import Image from 'next/image';
 import Link from 'next/link';
 import { calendlyLink } from '../../schedule-meeting-section';
@@ -8,7 +8,7 @@ export function Tiles4() {
     <article className="pt-10 pl-8 w-full bg-[#854CFF] rounded-3xl backdrop-blur-[15px] grid grid-cols-2 relative">
       <div className="flex flex-col text-base leading-7 text-white pb-10">
         <Image
-          src={bag}
+          src={icons.bag}
           role="presentation"
           alt=""
           className="aspect-square backdrop-blur-[10px] w-[60px]"
@@ -32,7 +32,7 @@ export function Tiles4() {
         </Link>
       </div>
       <Image
-        src={shopifyBag}
+        src={vectors.shopifyBag}
         className="aspect-auto max-w-[22rem] ml-auto mt-auto"
         alt=""
         role="presentation"

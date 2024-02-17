@@ -1,4 +1,4 @@
-import { shapeCursor, uiUxBg } from '@/assets';
+import { icons, vectors } from '@/assets';
 import Image from 'next/image';
 import Link from 'next/link';
 import { calendlyLink } from '../../schedule-meeting-section';
@@ -9,7 +9,7 @@ export function Tiles2() {
       <div className="flex flex-col text-base leading-7 text-white pb-10">
         <Image
           loading="lazy"
-          src={shapeCursor}
+          src={icons.shapeCursor}
           alt="Website Dev"
           className="aspect-square backdrop-blur-[10px] w-[60px]"
           width={60}
@@ -32,7 +32,7 @@ export function Tiles2() {
         </Link>
       </div>
       <Image
-        src={uiUxBg}
+        src={vectors.uiUxBg}
         className="aspect-auto max-w-[13rem] mt-auto ml-auto rounded-br-3xl"
         alt=""
         role="presentation"
