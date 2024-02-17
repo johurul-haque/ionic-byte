@@ -1,29 +1,15 @@
 import bg from '@/assets/mask-bg.svg';
 import { Header } from '@/components/header';
-import {
-  ArrowRightCircle,
-  Instagram,
-  LinkedinIcon,
-  TwitterIcon,
-} from 'lucide-react';
+import { ArrowRightCircle, Instagram } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { calendlyLink } from './schedule-meeting-section';
 
 export const socials = [
   {
     label: 'Go to Instagram',
     Icon: Instagram,
-    url: '/instagram',
-  },
-  {
-    label: 'Go to Linkedin',
-    Icon: LinkedinIcon,
-    url: '/linkedin',
-  },
-  {
-    label: 'Go to Twitter',
-    Icon: TwitterIcon,
-    url: '/twitter',
+    url: 'https://www.instagram.com/ionicbyte',
   },
 ];
 
@@ -64,7 +50,7 @@ export function HeroSection() {
         </p>
 
         <Link
-          href="/get-started"
+          href={calendlyLink}
           className="px-5 py-2.5 mt-12 flex items-center rounded-full gap-2.5 bg-white font-medium group"
         >
           Get Started
