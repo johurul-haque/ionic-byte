@@ -17,7 +17,9 @@ export default function Team() {
             IONIC BYTE
           </span>
           <br />
-          <span className="text-3xl font-bold">Leadership Team</span>
+          <span className="text-3xl font-bold tracking-wide">
+            Leadership Team
+          </span>
         </h1>
 
         <div className="container flex flex-wrap justify-center gap-16 relative z-10">
