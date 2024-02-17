@@ -12,7 +12,7 @@ const navs = [
 
 export function Header() {
   return (
-    <header className="container relative font-medium text-white mt-3 grid grid-cols-3">
+    <header className="container relative font-medium text-white pt-4 grid grid-cols-3">
       <Logo />
 
       <nav className="flex justify-center gap-x-8 px-3 py-2.5">
