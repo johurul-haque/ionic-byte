@@ -2,6 +2,7 @@ import { icons, vectors } from '@/assets';
 import { testimonials } from '@/assets/data/testimonials';
 import { BlurryColor } from '@/components/blurry-color';
 import { Heading2 } from '@/components/heading-two';
+import { cn } from '@/lib/utils';
 import Image from 'next/image';
 
 export function Testimonials() {
@@ -12,12 +13,17 @@ export function Testimonials() {
           What they say <br /> about us
         </Heading2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 relative">
-          {testimonials.map(({ name, message, img }) => (
+          {testimonials.map(({ name, message, img }, i) => (
             <article
               key={message}
-              className="rounded-xl p-6 bg-[#151515]/25 backdrop-blur-xl relative z-10"
+              className={cn(
+                'rounded-xl p-4 sm:p-6 bg-[#151515]/25 backdrop-blur-xl relative z-10',
+                {
+                  'max-sm:hidden': i > 2,
+                }
+              )}
             >
-              <figure className="flex gap-4 justify-between items-center">
+              <figure className="flex gap-2.5 sm:gap-4 justify-between items-center">
                 <Image
                   src={img}
                   alt={`Picture of ${name}`}
@@ -30,18 +36,18 @@ export function Testimonials() {
                   src={icons.quoteIcon}
                   aria-hidden={true}
                   role="presentation"
-                  className="size-10"
+                  className="size-6 sm:size-10"
                   alt=""
                 />
               </figure>
-              <p className="mt-5 font-thin tracking-wider leading-relaxed">
+              <p className="mt-4 sm:mt-5 font-light sm:font-thin tracking-wider leading-relaxed max-sm:text-sm">
                 {message}
               </p>
             </article>
           ))}
-          <BlurryColor className="bg-[#504CFF]/70 absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2" />
+          <BlurryColor className="bg-[#504CFF]/70 absolute top-0 left-0 -translate-x-1/2 sm:-translate-y-1/2" />
 
-          <BlurryColor className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 opacity-40" />
+          <BlurryColor className="absolute right-0 bottom-0 sm:top-1/2 sm:-translate-y-1/2 translate-x-1/2 opacity-40" />
         </div>
       </div>
       <Image

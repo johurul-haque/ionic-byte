@@ -34,15 +34,17 @@ export function RecentWorks() {
           <article key={url} className="relative z-10">
             <Link
               href={url}
-              className="grid gap-3 pb-5"
+              className="grid gap-1 md:gap-3 pb-5"
               target="_blank"
               aria-label={`Go to ${name} homepage`}
             >
-              <h3 className="text-xl font-semibold mt-4">{name}</h3>
-              <p className="font-light">{description} </p>
+              <h3 className="text-lg md:text-xl font-semibold md:mt-4 mt-2">
+                {name}
+              </h3>
+              <p className="font-light max-md:text-sm">{description} </p>
               <Image
                 src={img}
-                className="-order-1 aspect-[2.1] object-cover rounded-2xl"
+                className="-order-1 aspect-[2.1] object-cover rounded-lg md:rounded-2xl"
                 width={1920}
                 height={914.29}
                 alt={`Homepage of project ${name}`}
