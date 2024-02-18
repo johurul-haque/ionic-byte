@@ -11,23 +11,23 @@ export default function Team() {
 
       <Header />
 
-      <main className="my-28 relative overflow-x-clip">
+      <main className="my-20 sm:my-28 relative overflow-x-clip">
         <h1 className="text-white text-center mb-14">
-          <span className="uppercase tracking-wider text-lg inline-block mb-0.5">
+          <span className="uppercase tracking-wider sm:text-lg inline-block mb-0.5">
             IONIC BYTE
           </span>
           <br />
-          <span className="text-3xl font-bold tracking-wide">
+          <span className="text-2xl sm:text-3xl font-semibold sm:font-bold tracking-wide">
             Leadership Team
           </span>
         </h1>
 
-        <div className="container flex flex-wrap justify-center gap-16 relative z-10">
+        <div className="container flex flex-wrap justify-center gap-16 max-sm:gap-y-12 relative z-10">
           {teamMembers.map(({ name, role, img }) => (
             <figure key={name}>
               <Image
                 src={img}
-                className="rounded-full max-w-xs object-cover aspect-square"
+                className="rounded-full max-w-xs w-full object-cover aspect-square"
                 alt={`Picture of ${name}`}
                 width={500}
                 height={500}
