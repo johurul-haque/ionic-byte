@@ -13,13 +13,13 @@ const description =
 
 export function WorkTogether() {
   return (
-    <section className="py-8 my-16" id="services">
+    <section className="py-8 my-8 sm:my-16" id="services">
       <div className="container relative">
         <BlurryColor className="absolute top-0 left-0 -translate-x-1/2 -translate-y-12 bg-[#504CFF]/50" />
 
         <Heading2>Let&apos;s work together</Heading2>
         <div className="flex max-md:flex-col md:justify-between gap-3 items-start md:items-center mt-3">
-          <p className="text-slate-100 tracking-wider max-w-2xl font-light">
+          <p className="text-slate-100 tracking-wider max-w-2xl font-light max-sm:mb-1.5">
             {description}
           </p>
           <Link
@@ -35,7 +35,7 @@ export function WorkTogether() {
         </div>
 
         <div className="relative my-10">
-          <div className="grid gap-9 xl:grid-cols-7 xl:[&>*:nth-child(n+1):nth-child(-n+4)]:col-span-4 xl:[&>*:nth-child(n+2):nth-child(-n+3)]:col-span-3">
+          <div className="grid gap-9 xl:grid-cols-7 xl:[&>*:nth-child(n+1):nth-child(-n+4)]:col-span-4 xl:[&>*:nth-child(n+2):nth-child(-n+3)]:col-span-3 xl:[&>*]:max-h-[358px]">
             <Tiles1 />
             <Tiles2 />
             <Tiles3 />

@@ -5,9 +5,9 @@ import { calendlyLink } from '../../schedule-meeting-section';
 
 export function Tiles2() {
   return (
-    <article className="@container">
-      <div className="pt-6 @lg:pt-10 pl-6 @lg:pl-8 w-full bg-[#151515] rounded-3xl backdrop-blur-[15px] grid @lg:grid-cols-2 gap-3 relative  overflow-x-clip">
-        <div className="flex flex-col text-base leading-7 text-white pb-10 pr-6 @lg:pr-0">
+    <article className="@container rounded-2xl sm:rounded-3xl overflow-hidden">
+      <div className="pt-4 pl-4 sm:pt-6 @lg:pt-10 sm:pl-6 @lg:pl-8 w-full bg-[#151515] backdrop-blur-[15px] grid @lg:grid-cols-2 gap-3 relative">
+        <div className="flex flex-col text-base leading-7 text-white sm:pb-10 pb-4 max-sm:pr-4 sm:pr-6 @lg:pr-0">
           <Image
             loading="lazy"
             src={icons.shapeCursor}
@@ -16,7 +16,7 @@ export function Tiles2() {
             width={60}
             height={60}
           />
-          <h3 className="mt-6 @lg:mt-auto xl:mt-auto text-2xl xl:text-3xl font-medium whitespace-nowrap">
+          <h3 className="mt-6 @lg:mt-auto xl:mt-auto text-xl sm:text-2xl xl:text-3xl font-medium whitespace-nowrap">
             UI/UX Design
           </h3>
           <p className="mt-4 max-w-md">
@@ -33,7 +33,7 @@ export function Tiles2() {
         </div>
         <Image
           src={vectors.uiUxBg}
-          className="aspect-auto max-w-[13rem] mt-auto ml-auto rounded-br-3xl -order-1 @lg:order-1"
+          className="aspect-auto max-w-[13rem] mt-auto ml-auto rounded-br-3xl -order-1 @lg:order-1 w-full max-sm:[mask-image:linear-gradient(#000,#000,transparent)]"
           alt=""
           role="presentation"
           width={1080}

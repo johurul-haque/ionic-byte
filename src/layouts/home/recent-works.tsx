@@ -41,7 +41,9 @@ export function RecentWorks() {
               <h3 className="text-lg md:text-xl font-semibold md:mt-4 mt-2">
                 {name}
               </h3>
-              <p className="font-light max-md:text-sm">{description} </p>
+              <p className="font-light max-md:text-sm line-clamp-3">
+                {description}{' '}
+              </p>
               <Image
                 src={img}
                 className="-order-1 aspect-[2.1] object-cover rounded-lg md:rounded-2xl"

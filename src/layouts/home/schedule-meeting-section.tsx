@@ -12,7 +12,7 @@ export function ScheduleMeetingSection() {
       <div className="container flex flex-col">
         <Heading2 className="tracking-[0.015em]">{title}</Heading2>
 
-        <p className="text-slate-200 tracking-wider mt-5 max-w-md text-sm font-light">
+        <p className="text-slate-200 tracking-wider mt-5 max-w-md font-light">
           Work in the IT field includes Web design, UI/UX design, Branding and
           Shopify development.
         </p>

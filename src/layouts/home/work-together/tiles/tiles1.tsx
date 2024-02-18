@@ -5,11 +5,10 @@ import { calendlyLink } from '../../schedule-meeting-section';
 
 export function Tiles1() {
   return (
-    <article className="@container">
-      <div className="grid gap-3 @lg:grid-cols-2 pt-6 @lg:pt-10 pl-6 lg:pl-8 w-full bg-[#504CFF] rounded-3xl backdrop-blur-[15px] overflow-x-clip">
-        <div className="flex flex-col text-base leading-7 text-white pb-10 pr-6 @lg:pr-0">
+    <article className="@container rounded-2xl sm:rounded-3xl  overflow-hidden">
+      <div className="grid gap-3 pt-4 pl-4 @lg:grid-cols-2 sm:pt-6 @lg:pt-10 sm:pl-6 @lg:pl-8 bg-[#504CFF] w-full backdrop-blur-[15px]">
+        <div className="flex flex-col text-base leading-7 text-white sm:pb-10 pb-4 max-sm:pr-4 sm:pr-6 @lg:pr-0">
           <Image
-            loading="lazy"
             src={icons.globe}
             alt="Website Dev"
             className="backdrop-blur-[10px] size-12 lg:size-[60px]"
@@ -33,7 +32,7 @@ export function Tiles1() {
         </div>
         <Image
           src={vectors.webDevBg}
-          className="aspect-auto max-w-[22rem] ml-auto mt-auto -order-1 @lg:order-1"
+          className="aspect-auto max-w-[22rem] ml-auto mt-auto -order-1 @lg:order-1 w-full max-sm:[mask-image:linear-gradient(#000,#000,transparent)]"
           alt=""
           role="presentation"
           width={1080}
