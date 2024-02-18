@@ -62,7 +62,7 @@ export function Header({ className }: { className?: string }) {
 
       <button className="md:hidden" onClick={() => setIsVisible(true)}>
         <span className="sr-only">Open menu</span>
-        <MenuIcon />
+        <MenuIcon className="size-5" />
       </button>
     </header>
   );
