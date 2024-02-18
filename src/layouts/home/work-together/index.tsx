@@ -18,13 +18,13 @@ export function WorkTogether() {
         <BlurryColor className="absolute top-0 left-0 -translate-x-1/2 -translate-y-12 bg-[#504CFF]/50" />
 
         <Heading2>Let&apos;s work together</Heading2>
-        <div className="flex justify-between items-center mt-3">
+        <div className="flex max-md:flex-col md:justify-between gap-3 items-start md:items-center mt-3">
           <p className="text-slate-100 tracking-wider max-w-2xl font-light">
             {description}
           </p>
           <Link
             href={calendlyLink}
-            className="px-5 py-2.5 flex items-center rounded-full gap-2.5 bg-white font-medium group"
+            className="max-sm:text-sm px-4 md:px-5 py-1.5 md:py-2.5 flex items-center rounded-full gap-2.5 bg-white font-medium group whitespace-nowrap"
           >
             Get Started
             <ArrowRightCircle
@@ -35,13 +35,13 @@ export function WorkTogether() {
         </div>
 
         <div className="relative my-10">
-          <div className="grid gap-9 grid-cols-7 [&>*:first-child]:col-span-4 [&>*:nth-child(2)]:col-span-3 [&>*:nth-child(3)]:col-span-3 [&>*:nth-child(4)]:col-span-4">
+          <div className="grid gap-9 xl:grid-cols-7 xl:[&>*:nth-child(n+1):nth-child(-n+4)]:col-span-4 xl:[&>*:nth-child(n+2):nth-child(-n+3)]:col-span-3">
             <Tiles1 />
             <Tiles2 />
             <Tiles3 />
             <Tiles4 />
           </div>
-          <BlurryColor className="absolute right-0 top-1/2 translate-x-52 -translate-y-1/2" />
+          <BlurryColor className="absolute right-0 top-1/2 translate-x-52 -translate-y-1/2 max-xl:opacity-30" />
           <BlurryColor className="absolute left-0 bottom-0 -translate-x-52 translate-y-12 bg-[#504CFF]/50" />
         </div>
       </div>

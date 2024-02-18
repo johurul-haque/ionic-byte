@@ -8,7 +8,7 @@ export const calendlyLink = 'https://calendly.com/ionicbyte/30min';
 
 export function ScheduleMeetingSection() {
   return (
-    <section className="bg-black py-32">
+    <section className="bg-black py-20 sm:py-32">
       <div className="container flex flex-col">
         <Heading2 className="tracking-[0.015em]">{title}</Heading2>
 
@@ -19,7 +19,7 @@ export function ScheduleMeetingSection() {
 
         <Link
           href={calendlyLink}
-          className="bg-slate-50 px-5 py-2 rounded-full flex gap-2 items-center font-medium -order-1 ml-auto mb-3"
+          className="bg-slate-50 max-sm:text-sm px-4 md:px-5 py-1.5 md:py-2 rounded-full flex gap-2 items-center font-medium -order-1 sm:ml-auto mb-3 max-sm:mr-auto"
         >
           Schedule a meeting
           <Image

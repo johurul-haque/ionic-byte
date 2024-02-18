@@ -2,25 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.arrow-up {
-  background-color: white;
-  -webkit-mask-image: url('/arrow-up.svg');
-  mask-image: url('/arrow-up.svg');
-  -webkit-mask-size: 100%;
-  mask-size: 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-
-@keyframes pulse {
-  from, to {
-    opacity: .25;
+@layer components {
+  .arrow-up {
+    background-color: white;
+    -webkit-mask-image: url('/arrow-up.svg');
+    mask-image: url('/arrow-up.svg');
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
   }
-
-  50% {
-      opacity: .4;
-  }
-}
-.animate-long-pulse {
-  animation: pulse 6.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
