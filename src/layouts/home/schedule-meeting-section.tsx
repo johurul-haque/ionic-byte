@@ -1,4 +1,5 @@
 import { icons } from '@/assets';
+import { Heading2 } from '@/components/heading-two';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -9,9 +10,8 @@ export function ScheduleMeetingSection() {
   return (
     <section className="bg-black py-32">
       <div className="container flex flex-col">
-        <h2 className="text-6xl text-slate-50 max-w-7xl leading-tight tracking-[0.015em]">
-          {title}
-        </h2>
+        <Heading2 className="tracking-[0.015em]">{title}</Heading2>
+
         <p className="text-slate-200 tracking-wider mt-5 max-w-md text-sm font-light">
           Work in the IT field includes Web design, UI/UX design, Branding and
           Shopify development.

@@ -15,7 +15,7 @@ export const socials = [
 
 export function HeroSection() {
   return (
-    <div className="flex overflow-hidden relative flex-col pt-2 w-full min-h-[770px] max-md:px-5 max-md:max-w-full">
+    <div className="flex overflow-hidden relative flex-col max-md:justify-center min-h-[685px] h-[100svh]">
       <Image
         src={maskBg}
         alt=""
@@ -26,9 +26,9 @@ export function HeroSection() {
         quality={100}
       />
 
-      <Header />
+      <Header className="max-lg:mb-auto" />
 
-      <section className="flex relative flex-col items-center mt-20">
+      <section className="container flex relative flex-col items-center max-lg:mb-auto lg:mt-20">
         <div className="flex gap-4">
           {socials.map(({ Icon, url, label }) => (
             <Link key={url} href={url}>
@@ -41,21 +41,22 @@ export function HeroSection() {
           ))}
         </div>
 
-        <h1 className="text-white font-medium mt-10 text-8xl text-center leading-[110px] max-md:text-4xl max-md:leading-10">
-          Create Amazing <br /> websites with IonicByte
+        <h1 className="text-white text-center font-medium mt-6 md:mt-10 text-3xl min-[300px]:text-5xl min-[380px]:leading-[3.5rem] sm:leading-[4rem] md:text-6xl md:leading-[4.5rem] lg:text-7xl lg:leading-[5rem] 2xl:text-8xl 2xl:leading-[110px]">
+          Create Amazing <br /> websites with{' '}
+          <span className="whitespace-nowrap">Ionic Byte</span>
         </h1>
-        <p className="text-white mt-4 tracking-wider text-lg font-light text-center">
+        <p className="text-white mt-4 tracking-wider max-w-xs sm:max-w-md lg:max-w-lg text-sm sm:text-lg lg:text-xl font-light text-center">
           We will help you to build websites that is modern, user friendly with
           clean design
         </p>
 
         <Link
           href={calendlyLink}
-          className="px-5 py-2.5 mt-12 flex items-center rounded-full gap-2.5 bg-white font-medium group"
+          className="max-sm:text-sm px-4 md:px-5 py-1.5 md:py-2.5 mt-8 lg:mt-12 flex items-center rounded-full gap-2.5 bg-white font-medium group"
         >
           Get Started
           <ArrowRightCircle
-            className="-rotate-45 group-hover:rotate-0 transition-transform"
+            className="-rotate-45 group-hover:rotate-0 transition-transform max-sm:size-5"
             strokeWidth={1.5}
           />
         </Link>

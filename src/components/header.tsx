@@ -12,11 +12,16 @@ const navs = [
   { label: 'Contact Us', url: calendlyLink },
 ];
 
-export function Header() {
+export function Header({ className }: { className?: string }) {
   const [isVisible, setIsVisible] = useState(false);
 
   return (
-    <header className="container relative font-medium text-white pt-4 flex justify-between items-center gap-x-3">
+    <header
+      className={cn(
+        'container relative font-medium text-white pt-4 flex justify-between items-center gap-x-3',
+        className
+      )}
+    >
       <Logo />
 
       <nav
@@ -36,6 +41,7 @@ export function Header() {
           <Link
             href={url}
             key={url}
+            onClick={() => setIsVisible(false)}
             className="max-md:hover:bg-indigo-800/50 max-md:block max-md:py-2 max-md:px-6"
           >
             {label}
