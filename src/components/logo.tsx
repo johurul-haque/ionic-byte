@@ -9,7 +9,7 @@ export function Logo() {
       <Image
         src={logo}
         alt=""
-        className="aspect-[4.76] w-36"
+        className="aspect-[4.76] w-28 sm:w-36"
         width={476}
         quality={100}
         height={100}

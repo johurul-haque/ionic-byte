@@ -14,7 +14,7 @@
 
 @keyframes pulse {
   from, to {
-    opacity: .3;
+    opacity: .25;
   }
 
   50% {
@@ -22,5 +22,5 @@
   }
 }
 .animate-long-pulse {
-  animation: pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation: pulse 6.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }

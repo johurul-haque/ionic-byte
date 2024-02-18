@@ -11,7 +11,7 @@ export default function Team() {
 
       <Header />
 
-      <main className="my-28 relative">
+      <main className="my-28 relative overflow-x-clip">
         <h1 className="text-white text-center mb-14">
           <span className="uppercase tracking-wider text-lg inline-block mb-0.5">
             IONIC BYTE
