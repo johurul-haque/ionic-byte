@@ -11,7 +11,7 @@ export function Heading2({
   return (
     <h2
       className={cn(
-        'text-3xl sm:text-4xl md:text-5xl text-slate-50 max-w-7xl leading-tight tracking-[0.015em]',
+        'text-3xl sm:text-4xl md:text-5xl max-w-7xl leading-tight tracking-[0.015em] text-gradient',
         className
       )}
     >

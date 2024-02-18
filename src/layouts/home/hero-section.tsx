@@ -41,7 +41,7 @@ export function HeroSection() {
           ))}
         </div>
 
-        <h1 className="text-white text-center font-medium mt-6 md:mt-10 text-3xl min-[300px]:text-5xl min-[380px]:leading-[3.5rem] sm:leading-[4rem] md:text-6xl md:leading-[4.5rem] lg:text-7xl lg:leading-[5rem] 2xl:text-8xl 2xl:leading-[110px]">
+        <h1 className="text-center font-medium mt-6 md:mt-10 text-3xl min-[300px]:text-5xl min-[380px]:leading-[3.5rem] sm:leading-[4rem] md:text-6xl md:leading-[4.5rem] lg:text-7xl lg:leading-[5rem] 2xl:text-8xl 2xl:leading-[110px] text-gradient">
           Create Amazing <br /> websites with{' '}
           <span className="whitespace-nowrap">Ionic Byte</span>
         </h1>

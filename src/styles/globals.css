@@ -9,6 +9,9 @@
 }
 
 @layer components {
+  .text-gradient {
+    @apply text-transparent bg-clip-text bg-[linear-gradient(120.88deg,rgb(151,149,255),rgb(255,255,255),rgb(255,255,255),rgb(190,159,255))];
+  }
   .arrow-up {
     background-color: white;
     -webkit-mask-image: url('/arrow-up.svg');
