@@ -13,7 +13,7 @@ const description =
 
 export function WorkTogether() {
   return (
-    <section className="py-36">
+    <section className="py-8 my-16" id="services">
       <div className="container relative">
         <BlurryColor className="absolute top-0 left-0 -translate-x-1/2 -translate-y-12 bg-[#504CFF]/50" />
 

@@ -15,11 +15,11 @@ export const socials = [
 
 export function HeroSection() {
   return (
-    <div className="flex overflow-hidden relative flex-col px-16 pt-2 w-full min-h-[770px] max-md:px-5 max-md:max-w-full">
+    <div className="flex overflow-hidden relative flex-col pt-2 w-full min-h-[770px] max-md:px-5 max-md:max-w-full">
       <Image
-        loading="lazy"
         src={maskBg}
         alt=""
+        role="presentation"
         className="object-cover absolute inset-0 size-full"
         width={1920}
         height={1080}

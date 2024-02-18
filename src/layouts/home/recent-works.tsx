@@ -10,7 +10,7 @@ const description =
 
 export function RecentWorks() {
   return (
-    <section className="mt-6 text-white container">
+    <section className="pt-6 text-white container" id="portfolio">
       <Heading2>Recent Works</Heading2>
       <div className="flex justify-between items-center mt-3">
         <p className="max-w-xl font-light">

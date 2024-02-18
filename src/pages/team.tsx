@@ -29,8 +29,8 @@ export default function Team() {
                 src={img}
                 className="rounded-full max-w-xs object-cover aspect-square"
                 alt={`Picture of ${name}`}
-                width={700}
-                height={700}
+                width={500}
+                height={500}
               />
               <figcaption className="text-white flex flex-col-reverse text-center mt-5">
                 <h2 className="text-xl font-medium tracking-wide">{name}</h2>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export function Logo() {
   return (
-    <Link href={'/'} className="block self-center">
+    <Link href={'/'}>
       <span className="sr-only">Ionic Byte homepage</span>
       <Image
         src={logo}
