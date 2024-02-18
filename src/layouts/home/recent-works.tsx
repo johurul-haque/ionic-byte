@@ -12,14 +12,14 @@ export function RecentWorks() {
   return (
     <section className="pt-6 text-white container" id="portfolio">
       <Heading2>Recent Works</Heading2>
-      <div className="flex justify-between items-center mt-3">
-        <p className="max-w-xl font-light">
+      <div className="flex justify-between items-center gap-3 mt-3">
+        <p className="max-w-md md:max-w-xl font-light max-md:text-sm">
           Some of our past projects we have completed. We help you build modern,
           user friendly websites with SEO optimization.
         </p>
         <Link
           href="/projects"
-          className="px-5 py-2.5 flex items-center rounded-full gap-2.5 bg-white text-gray-950 font-medium group"
+          className="max-sm:text-sm px-4 md:px-5 py-1.5 md:py-2.5 flex items-center rounded-full gap-2.5 bg-white text-gray-950 font-medium group whitespace-nowrap max-sm:hidden"
         >
           View All
           <ArrowRightCircle
@@ -29,7 +29,7 @@ export function RecentWorks() {
         </Link>
       </div>
 
-      <div className="grid grid-cols-2 gap-8 mt-16 relative [&>*:first-child]:border-b [&>*:nth-child(2)]:border-b [&>*]:border-[#635189]">
+      <div className="grid md:grid-cols-2 gap-8 mt-10 md:mt-16 relative max-md:[&>*]:border-b md:[&>*:nth-child(n+1):nth-child(-n+2)]:border-b [&>*]:border-[#635189]">
         {projects.map(({ name, url, img }) => (
           <article key={url} className="relative z-10">
             <Link
