@@ -5,6 +5,10 @@ type NextHeadProps = {
   faviconUrl?: string;
 } & ({ title: string } | { faviconUrl: string });
 
+const description = `Unleash Your Digital Potential with IonicByte's Premier Web & App Design Services! Elevate Your Online Presence Today.`;
+
+const imgUrl = `https://ionic-byte.vercel.app/ionic-byte.jpg`;
+
 export function NextHead({ faviconUrl, title }: NextHeadProps) {
   return (
     <Head>
@@ -12,6 +16,8 @@ export function NextHead({ faviconUrl, title }: NextHeadProps) {
       {faviconUrl && (
         <link rel="shortcut icon" href={faviconUrl} type="image/x-icon" />
       )}
+      <meta property="og:image" content={imgUrl} />
+      <meta name="description" content={description} />
     </Head>
   );
 }

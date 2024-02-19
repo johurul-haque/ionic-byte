@@ -1,6 +1,7 @@
 import { Footer } from '@/components/footer';
 import { NextHead } from '@/components/next-head';
 import '@/styles/globals.css';
+import 'animate.css';
 import type { AppProps } from 'next/app';
 import { Inter } from 'next/font/google';
 

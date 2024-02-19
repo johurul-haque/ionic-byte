@@ -10,6 +10,7 @@ export default function Home() {
   return (
     <>
       <NextHead title="Ionic Byte" />
+
       <main className="overflow-x-clip">
         <HeroSection />
         <ScheduleMeetingSection />

@@ -6,7 +6,7 @@ import { calendlyLink } from '../../schedule-meeting-section';
 export function Tiles3() {
   return (
     <article className="@container rounded-2xl sm:rounded-3xl  overflow-hidden">
-      <div className="pt-4 pl-4 sm:pt-6 @lg:pt-10 sm:pl-6 @lg:pl-8 w-full bg-[#151515] backdrop-blur-[15px] grid @lg:grid-cols-[1fr_auto] gap-3 relative">
+      <div className="pt-4 pl-4 sm:pt-6 @lg:pt-10 sm:pl-6 @lg:pl-8 w-full bg-[#151515] backdrop-blur-[15px] grid @lg:grid-cols-[1fr_auto] gap-3 relative h-full">
         <div className="flex flex-col text-base leading-7 text-white sm:pb-10 pb-4 max-sm:pr-4 sm:pr-6 @lg:pr-0">
           <Image
             src={icons.tag}

@@ -19,9 +19,14 @@ const config = {
           '50%': { opacity: '0.4' },
           to: { opacity: '0.25' },
         },
+        scale: {
+          from: { scale: '0' },
+          to: { scale: '1' },
+        },
       },
       animation: {
         'long-pulse': 'pulse 6.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        size: 'scale .4s cubic-bezier(0.4, 0, 0.6, 1)',
       },
     },
   },

@@ -41,10 +41,13 @@ export function HeroSection() {
           ))}
         </div>
 
-        <h1 className="text-center font-medium mt-6 md:mt-10 text-3xl min-[300px]:text-5xl min-[380px]:leading-[3.5rem] sm:leading-[4rem] md:text-6xl md:leading-[4.5rem] lg:text-7xl lg:leading-[5rem] 2xl:text-8xl 2xl:leading-[110px] text-gradient">
-          Create Amazing <br /> websites with{' '}
-          <span className="whitespace-nowrap">Ionic Byte</span>
-        </h1>
+        <div className="overflow-y-clip">
+          <h1 className="text-center font-medium mt-6 md:mt-10 text-3xl min-[300px]:text-5xl min-[380px]:leading-[3.5rem] sm:leading-[4rem] md:text-6xl md:leading-[4.5rem] lg:text-7xl lg:leading-[5rem] 2xl:text-8xl 2xl:leading-[110px] text-gradient animate__animated animate__fadeInUp">
+            Create Amazing <br /> websites with{' '}
+            <span className="whitespace-nowrap">Ionic Byte</span>
+          </h1>
+        </div>
+
         <p className="text-white mt-4 tracking-wider max-w-xs sm:max-w-md lg:max-w-lg text-sm sm:text-lg lg:text-xl font-light text-center">
           We will help you to build websites that is modern, user friendly with
           clean design
