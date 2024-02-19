@@ -31,7 +31,7 @@ export function RecentWorks() {
 
       <div className="grid md:grid-cols-2 gap-8 mt-10 md:mt-16 relative max-md:[&>*]:border-b md:[&>*:nth-child(n+1):nth-child(-n+2)]:border-b [&>*]:border-[#635189]">
         {projects.map(({ name, url, img }) => (
-          <article key={url} className="relative z-10">
+          <article key={url} className="relative z-10" data-aos="fade-up">
             <Link
               href={url}
               className="grid gap-1 md:gap-3 pb-5"
